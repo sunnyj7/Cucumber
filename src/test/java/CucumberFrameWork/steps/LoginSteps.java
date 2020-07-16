@@ -1,5 +1,6 @@
 package CucumberFrameWork.steps;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -31,6 +32,7 @@ public class LoginSteps {
 	@When("^User opens URL \"([^\"]*)\"$")
 	public void user_opens_URL(String url) throws Throwable {
 		driver.get(url);
+		Thread.sleep(2000);
 	}
 
 	@When("^Click on Login$")
@@ -74,7 +76,7 @@ public class LoginSteps {
 	@When("^Clicks on Create account$")
 	public void clicks_on_Create_account() throws Throwable {
 		cna.clickOnCreateAccount();
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 	}
 
 	@When("^Enters title as \"([^\"]*)\" first name \"([^\"]*)\" last name \"([^\"]*)\" email address \"([^\"]*)\" password as \"([^\"]*)\" confirm password as \"([^\"]*)\" and agrees terms and condition \"([^\"]*)\"$")
@@ -87,6 +89,15 @@ public class LoginSteps {
 	public void clicks_on_Create_an_account() throws Throwable {
 		cna.clickOnbtnCreateAnAccount();
 	    
+	}
+	
+	@Then("^if account already exists then skip remaining steps$")
+	public void if_account_already_exists_then_skip_remaining_steps() throws Throwable {
+		if (driver.getPageSource().contains("This email address has already been registered")) {
+			System.out.println("User Already Exists and skipping remaining steps");
+			driver.quit();			
+			Assert.assertTrue(false);
+		}
 	}
 	
 	//Additional step definition for Navigation Bar
@@ -255,7 +266,7 @@ public class LoginSteps {
 	
 	@Then("^User sees search results$")
 	public void user_sees_search_results() throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 	}
 
 	@When("^User clicks on View Details$")
@@ -265,20 +276,26 @@ public class LoginSteps {
 
 	@Then("^User sees the Job Details$")
 	public void user_sees_the_Job_Details() throws Throwable {
-		Thread.sleep(15000);
+		Thread.sleep(6000);
 	}
 		
 	@When("^Clicks on Banking and finance jobs under Browse jobs by Sector$")
 	public void clicks_on_Banking_and_finance_jobs_under_Browse_jobs_by_Sector() throws Throwable {
 		job.clickJobsBySector();
+		Thread.sleep(6000);
 	}
 
 	@Then("^User sees job listings and clicks on View Details$")
 	public void user_sees_job_listings_and_clicks_on_View_Details() throws Throwable {
+		job.clkJobsBySector();
+		Thread.sleep(6000);
 	}
 	
 	@Then("^clicks on Apply$")
 	public void clicks_on_Apply() throws Throwable {
+		job.clickApply();
+		Thread.sleep(6000);
+		
 	}
 	
 
