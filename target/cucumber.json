@@ -1,0 +1,1058 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Create a new account",
+        "description": "",
+        "id": "new-account;create-a-new-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14821463100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launches Chrome browser",
+            "match": {
+              "location": "LoginSteps.user_launches_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38633693400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5511544000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Clicks on Create account",
+            "match": {
+              "location": "LoginSteps.clicks_on_Create_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13536257300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enters title as \"Mr\" first name \"Dummy\" last name \"J\" email address \"dummmy@gmmail.com\" password as \"Dummypass1\" confirm password as \"Dummypass1\" and agrees terms and condition \"agreeTermsAndConds\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mr",
+                  "offset": 17
+                },
+                {
+                  "val": "Dummy",
+                  "offset": 33
+                },
+                {
+                  "val": "J",
+                  "offset": 51
+                },
+                {
+                  "val": "dummmy@gmmail.com",
+                  "offset": 69
+                },
+                {
+                  "val": "Dummypass1",
+                  "offset": 101
+                },
+                {
+                  "val": "Dummypass1",
+                  "offset": 134
+                },
+                {
+                  "val": "agreeTermsAndConds",
+                  "offset": 178
+                }
+              ],
+              "location": "LoginSteps.enters_title_as_first_name_last_name_email_address_password_as_confirm_password_as_and_agrees_terms_and_condition(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 685674000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on Create an account",
+            "match": {
+              "location": "LoginSteps.clicks_on_Create_an_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2047946300,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(.,\u0027Sign out\u0027)]\"}\n  (Session info: chrome\u003d83.0.4103.116)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027SUN\u0027, ip: \u0027192.168.29.61\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\WK\\AppData\\Local\\Temp\\scoped_dir36600_2094737739}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:51236}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.116, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: bed40603866558b41e574153a182b609\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(.,\u0027Sign out\u0027)]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat CucumberFrameWork.LoginPage.clickLogout(LoginPage.java:58)\r\n\tat CucumberFrameWork.steps.LoginSteps.user_click_on_Log_out_link(LoginSteps.java:57)\r\n\tat ✽.When User click on Log out link(CreateNewAccount.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "User click on Log out link",
+            "match": {
+              "location": "LoginSteps.user_click_on_Log_out_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User should be taken to the homepage",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "close browser",
+            "match": {
+              "location": "LoginSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "New account",
+    "description": "",
+    "id": "new-account",
+    "keyword": "Feature",
+    "uri": "CreateNewAccount.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Navigate Links in the Footer",
+        "description": "",
+        "id": "footer-links;navigate-links-in-the-footer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18677293700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launches Chrome browser",
+            "match": {
+              "location": "LoginSteps.user_launches_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51321719000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 857228100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on About Us",
+            "match": {
+              "location": "LoginSteps.click_on_About_Us()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2999523300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should be taken to the About Us page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_About_Us_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4458002900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Clicks on Contact Us",
+            "match": {
+              "location": "LoginSteps.user_Clicks_on_Contact_Us()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000229000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be taken to the Contact Us page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_Contact_Us_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5725014400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Clicks on Terms \u0026 Conditions",
+            "match": {
+              "location": "LoginSteps.user_Clicks_on_Terms_Conditions()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3003589100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be taken to the Terms \u0026 Conditions page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_Terms_Conditions_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3962690500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Clicks on Privacy Policy",
+            "match": {
+              "location": "LoginSteps.user_Clicks_on_Privacy_Policy()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000280900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be taken to the Privacy Policy page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_Privacy_Policy_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5089017200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User Clicks on Advertise with us",
+            "match": {
+              "location": "LoginSteps.user_Clicks_on_Advertise_with_us()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2999666700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should be taken to the Advertise with us page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_Advertise_with_us_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10176631600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1765308800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User Clicks on Facebook button",
+            "match": {
+              "location": "LoginSteps.user_Clicks_on_Facebook_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2999640500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should be taken to the Facebook page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_Facebook_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5528281700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User Clicks on Twitter button",
+            "match": {
+              "location": "LoginSteps.user_Clicks_on_Twitter_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000120800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should be taken to the Twitter page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_Twitter_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6367113500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User Clicks on LinkedIn button",
+            "match": {
+              "location": "LoginSteps.user_Clicks_on_LinkedIn_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000208500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User should be taken to the LinkedIn page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_LinkedIn_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2022709300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "close browser",
+            "match": {
+              "location": "LoginSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Footer Links",
+    "description": "",
+    "id": "footer-links",
+    "keyword": "Feature",
+    "uri": "Footer.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Search Job from homepage",
+        "description": "",
+        "id": "jobs-search;search-job-from-homepage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4248490200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launches Chrome browser",
+            "match": {
+              "location": "LoginSteps.user_launches_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13691535900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1746494500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enters keywords as \"Director\" and location as \"UK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Director",
+                  "offset": 20
+                },
+                {
+                  "val": "UK",
+                  "offset": 47
+                }
+              ],
+              "location": "LoginSteps.enters_keywords_as_and_location_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 359418900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Search Button",
+            "match": {
+              "location": "LoginSteps.user_clicks_on_Search_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2999786600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User sees search results",
+            "match": {
+              "location": "LoginSteps.user_sees_search_results()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 355827300,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(.,\u0027View details\u0027)]\"}\n  (Session info: chrome\u003d83.0.4103.116)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027SUN\u0027, ip: \u0027192.168.29.61\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\WK\\AppData\\Local\\Temp\\scoped_dir20824_2081427686}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:52555}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.116, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 9af3e4dad93c6a200dcff9b0ed5018ce\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(.,\u0027View details\u0027)]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)\r\n\tat CucumberFrameWork.Jobs.clickViewDetails(Jobs.java:35)\r\n\tat CucumberFrameWork.steps.LoginSteps.user_clicks_on_View_Details(LoginSteps.java:263)\r\n\tat ✽.When User clicks on View Details(Jobs.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "User clicks on View Details",
+            "match": {
+              "location": "LoginSteps.user_clicks_on_View_Details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User sees the Job Details",
+            "match": {
+              "location": "LoginSteps.user_sees_the_Job_Details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Clicks on Banking and finance jobs under Browse jobs by Sector",
+            "match": {
+              "location": "LoginSteps.clicks_on_Banking_and_finance_jobs_under_Browse_jobs_by_Sector()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User sees job listings and clicks on View Details",
+            "match": {
+              "location": "LoginSteps.user_sees_job_listings_and_clicks_on_View_Details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "clicks on Apply",
+            "match": {
+              "location": "LoginSteps.clicks_on_Apply()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "close browser",
+            "match": {
+              "location": "LoginSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Jobs Search",
+    "description": "",
+    "id": "jobs-search",
+    "keyword": "Feature",
+    "uri": "Jobs.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login into account with correct credentials",
+        "description": "",
+        "id": "login-into-account;login-into-account-with-correct-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16702256700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launches Chrome browser",
+            "match": {
+              "location": "LoginSteps.user_launches_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33560693400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5825804600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on Login",
+            "match": {
+              "location": "LoginSteps.click_on_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8705363700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters Email as \"dummy@gmmail.com\" and Password as \"Dummypass1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dummy@gmmail.com",
+                  "offset": 22
+                },
+                {
+                  "val": "Dummypass1",
+                  "offset": 57
+                }
+              ],
+              "location": "LoginSteps.user_enters_Email_as_and_Password_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11003584700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on Signin",
+            "match": {
+              "location": "LoginSteps.user_click_on_Signin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4471081600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Log out link",
+            "match": {
+              "location": "LoginSteps.user_click_on_Log_out_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4999585200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be taken to the homepage",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2092134100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "close browser",
+            "match": {
+              "location": "LoginSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login Into Account",
+    "description": "Existing user should be able to login into account with correct credentials",
+    "id": "login-into-account",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Check Navigation Bar Elements",
+        "description": "",
+        "id": "navigation-bar;check-navigation-bar-elements",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4396613100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launches Chrome browser",
+            "match": {
+              "location": "LoginSteps.user_launches_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25927689400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 296346000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on Home",
+            "match": {
+              "location": "LoginSteps.click_on_Home()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4999822400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should be taken to the homepage",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6304715600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Clicks on Find a Job",
+            "match": {
+              "location": "LoginSteps.user_Clicks_on_Find_a_Job()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2999704200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be taken to the Find a Job page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_Find_a_Job_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2871123800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4001914900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Clicks on Find a Job alerts",
+            "match": {
+              "location": "LoginSteps.clicks_on_Find_a_Job_alerts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000447800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should be taken to the Job alerts page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_Job_alerts_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5608941100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1296494400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Clicks on Search Recruiters",
+            "match": {
+              "location": "LoginSteps.clicks_on_Search_Recruiters()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000231000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should be taken to the Search Recruiters page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_Search_Recruiters_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6113928100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1476859900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Clicks on Jobs blog",
+            "match": {
+              "location": "LoginSteps.clicks_on_Jobs_blog()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000199000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should be taken to the Jobs blogs page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_Jobs_blogs_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5036903200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4624141200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Clicks on The Economist",
+            "match": {
+              "location": "LoginSteps.clicks_on_The_Economist()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3001012100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should be taken to The Economist page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_The_Economist_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3920282800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User opens URL \"https://jobs.economist.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.economist.com",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2709132500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Clicks on Recruiters",
+            "match": {
+              "location": "LoginSteps.clicks_on_Recruiters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2999987400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User should be taken to the Recruiters page",
+            "match": {
+              "location": "LoginSteps.user_should_be_taken_to_the_Recruiters_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1666723700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "close browser",
+            "match": {
+              "location": "LoginSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Navigation Bar",
+    "description": "",
+    "id": "navigation-bar",
+    "keyword": "Feature",
+    "uri": "Navigation.feature"
+  }
+]
